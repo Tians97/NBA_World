@@ -24,7 +24,7 @@
 ## Implementation Timeline ##
 
   - Friday Afternoon & Weekend: Working on the API and get familer with D3 library 
-  - Monday: Buuild up the basic layout of website (HTML and CSS)
+  - Monday: Building up the basic layout of website (HTML and CSS) and Working on the NBA map (the map will contains the team logos)
   - Tuesday: Putting information into each block (Javascript and D3.js)
   - Wednesday: Keep working on the data visualization, making UI better
   - Thursday Morning: 
