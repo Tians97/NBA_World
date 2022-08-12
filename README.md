@@ -8,10 +8,10 @@
 
   In NBA Data Visualization , users will be able to:
   
-  - Users can click on the plot to see more information
-  - Finding out the NBA data in different seasons
-  - Comparing stats between two players
-  - Visualizing multiple NBA records
+  - Users can click on the map to see more information of the team (name, top players, honors)
+  - Finding out the NBA data in different seasons (depending on the api, how many seasons data do we have)
+  - Click on the player, can se the player's informaiton (team, No., honor, avg point, shoot percentage, hot spot(with plot))
+  - Visualize multiple NBA records
 
 
 ## Technologies, Libraries, APIs ##
