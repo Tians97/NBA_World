@@ -18,7 +18,7 @@
 
   - Technologies: HTML, CSS and JavaScript
   - Libraries: D3.js
-  - APIs: https://api-sports.io/documentation/nba/v2
+  - APIs: http://www.balldontlie.io/#introduction
 
 
 ## Implementation Timeline ##
