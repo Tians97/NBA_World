@@ -11,22 +11,66 @@ svg {
     margin-right: auto;
 }
 
-.states {
-    fill: lightblue;
+.state {
     stroke:grey;
 }
 
-.state-borders {
-    fill: none;
-    stroke:darkgray;
-    stroke-width: 0.5px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    pointer-events: none;
-}
 /*!***************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/team.css ***!
   \***************************************************************************************************/
+image:hover{
+    transform: scale(1.01);
+}
+
+
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/modal.css ***!
+  \****************************************************************************************************/
+.modal{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10px;
+    background-color: aliceblue;
+    width: 500px;
+    max-width: 80%;
+    height: 40vh;
+    display: none;
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button{
+    cursor:pointer;
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding:10px 15px;
+}
+
+
+
+
 
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!

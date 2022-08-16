@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
 
-    <script src="./dist/main.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./dist/main.js" defer></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
-    <title>NBA Data</title>
+    <title>NBA World</title>
 </head>
 
 <body>
-    <h1>NBA Data</h1>
-    <svg width="960" height="600"></svg>
+    <h1>NBA World</h1>
+    <svg id="nba-map" width="975" height="610"></svg>
+
+    <div class = "modal" id ="modal">
+        <div class="modal-header">
+            <div class="title"></div>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+        </div>
+    </div>
 </body>
 
 </html>
