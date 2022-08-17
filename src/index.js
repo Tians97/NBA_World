@@ -1,6 +1,9 @@
 
 import {map} from './scripts/map'
-import {totalPointChart} from'./scripts/total_championships'
+import {totalPointChart} from'./scripts/total_points'
+import {total3PointChart} from'./scripts/total_3points'
+import {totalChampionships } from './scripts/total_championships'
+
 
 const title = document.getElementsByClassName('title')[0]
 const location = document.getElementsByClassName('location')[0]
@@ -40,4 +43,6 @@ document.addEventListener('DOMContentLoaded', function(){
     
     map();
     totalPointChart();
+    total3PointChart();
+    totalChampionships();
 })

@@ -1,4 +1,17 @@
-.totalPoint{
-    width: 500px;
-    height: 500px;
+canvas#totalPoint{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas#total3Point {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas#totalChampionship{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

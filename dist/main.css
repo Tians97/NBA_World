@@ -1,6 +1,6 @@
 /*!**************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/map.css ***!
-\**************************************************************************************************/
+  \**************************************************************************************************/
 h1 {
     text-align: center;
 }
@@ -9,6 +9,7 @@ svg {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
 }
 
 .state {
@@ -28,7 +29,7 @@ image:hover{
   \****************************************************************************************************/
 .modal{
     position:fixed;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 200ms ease-in-out;
@@ -70,6 +71,27 @@ image:hover{
 
 
 
+
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/chart.css ***!
+  \****************************************************************************************************/
+canvas#totalPoint{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas#total3Point {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas#totalChampionship{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
