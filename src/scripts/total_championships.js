@@ -2,9 +2,9 @@ import Chart from 'chart.js/auto'
 
 var canvasElement = document.getElementById('totalChampionship')
 const img1 = new Image();
-img1.src = "../../image/BOS.png";
+img1.src = "../../image/LAL.png";
 const img2 = new Image();
-img2.src = "../../image/LAL.png";
+img2.src = "../../image/BOS.png";
 const img3 = new Image();
 img3.src = "../../image/GSW.png";
 const img4 = new Image();
@@ -53,7 +53,7 @@ const barAvatar = {
             scales: { x, y } } = chart;
         ctx.save();
         for (let i = 0; i < datapoint.length; i++) {
-            ctx.drawImage(image[i], x.getPixelForValue(i) - 25, y.getPixelForValue(datapoint[i]) - 50, 50, 50)
+            ctx.drawImage(image[i], x.getPixelForValue(datapoint[i]) - 25, y.getPixelForValue(i) - 25, 50, 50)
         }
     }
 }
@@ -61,12 +61,34 @@ var config = {
     type: "bar",
     data: {
         labels: ["Los Angeles Lakers", "Boston Celtics", "Golden State Warriors", "Chicago Bulls", "San Antonio Spurs", "Philadelphia 76ers", "Detroit Pistons", "Miami Heat", "New York Knicks", "Houston Rockets", "Milwaukee Bucks", "Cleveland Cavaliers", "Atlanta Hawks", "Oklahoma City Thunder", "Washington Wizards", "Portland Trail Blazers", "Dallas Mavericks", "Toronto Raptors", "Sacramento Kings" ],
-        datasets: [{ label: "Number of Championships", data: [17, 17, 7, 6, 5, 3, 3, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1] }]
+        datasets: [{ label: "Number of Championships", 
+                    data: [17, 17, 7, 6, 5, 3, 3, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1],
+            backgroundColor: ['rgb(85, 37, 130)',
+                                'rgb(0, 122, 51)',
+                                'rgb(29, 66, 138)',
+                                'rgb(206, 17, 65)',
+                                'rgb(196, 206, 211)',
+                                'rgb(0, 107, 182)',
+                                'rgb(200,16,46)',
+                                'rgb(152, 0, 46)',
+                                'rgb(245, 132, 38)',
+                                'rgb(206,17,65)',
+                                'rgb(0, 71, 27)',
+                                'rgb(134, 0, 56)',
+                                'rgb(200, 16, 46)',
+                                'rgb(0, 125, 195)',
+                                'rgb(0,43,92)',
+                                'rgb(224, 58, 62)',
+                                'rgb(0, 83, 188)',
+                                'rgb(206, 17, 65)',
+                                'rgb(91,43,130)'
+                                ]},]
     },
     borderWidth: 1,
     options: {
         responsive: false,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        indexAxis: 'y'
     },
     plugins: [barAvatar]
 }

@@ -33,7 +33,7 @@ const barAvatar = {
             scales: {x, y} } = chart;
         ctx.save();
         for (let i = 0; i < datapoint.length; i++){
-            ctx.drawImage(image[i], x.getPixelForValue(i) - 20, y.getPixelForValue(datapoint[i]) - 50, 40, 50)
+            ctx.drawImage(image[i], x.getPixelForValue(datapoint[i]), y.getPixelForValue(i) - 25, 40, 50)
         }
     }
 }
@@ -41,12 +41,25 @@ var config = {
     type: "bar",
     data: {
         labels: ["Kareem Abdul-Jabbar", "LeBron James", "Karl Malone", "Kobe Bryant", "Michael Jordan", "Dirk Nowitzki", "Wilt Chamberlain", "Shaquille O'Neal", "Carmelo Anthony", "Moses Malone"],
-        datasets: [{ label: "Career's Total Points", data:[38387, 37062, 36928, 33643, 32292, 31560, 31419, 28596, 28289, 27409]}]
+        datasets: [{ label: "Career's Total Points",
+        data:[38387, 37062, 36928, 33643, 32292, 31560, 31419, 28596, 28289, 27409],
+            backgroundColor: ['rgb(85, 37, 130)',
+                                'rgb(134, 0, 56)',
+                                'rgb(108, 174, 223)',
+                                'rgb(253, 185, 39)',
+                                'rgb(206, 17, 65)',
+                                'rgb(0, 83, 188)',
+                                'rgb(29, 66, 138)',
+                                'rgb(196, 206, 211)',
+                                'rgb(245, 132, 38)',
+                                'rgb(206,17,65)']
+    }]
     },
     borderWidth: 1,
     options: {
         responsive:false,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        indexAxis: "y"
     },
     plugins: [barAvatar]
 }

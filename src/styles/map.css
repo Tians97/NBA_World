@@ -12,3 +12,7 @@ svg {
 .state {
     stroke:grey;
 }
+
+img{
+    z-index: 1;
+}

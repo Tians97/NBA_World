@@ -16,6 +16,9 @@ svg {
     stroke:grey;
 }
 
+img{
+    z-index: 1;
+}
 /*!***************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/team.css ***!
   \***************************************************************************************************/
@@ -93,6 +96,51 @@ canvas#totalChampionship{
     margin-right: auto;
 }
 
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/charttabs.css ***!
+  \********************************************************************************************************/
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.mytabs input[type='radio']{
+    display: none;;
+}
+
+.mytabs label{
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+    order: 0;
+}
+
+.mytabs .tab{
+    width:100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+
+.mytabs .tab h2{
+    font-size: 3em;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab{
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label{
+    background: #fff;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/

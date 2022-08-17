@@ -33,7 +33,7 @@ const barAvatar = {
             scales: { x, y } } = chart;
         ctx.save();
         for (let i = 0; i < datapoint.length; i++) {
-            ctx.drawImage(image[i], x.getPixelForValue(i) - 20, y.getPixelForValue(datapoint[i]) - 50, 40, 50)
+            ctx.drawImage(image[i], x.getPixelForValue(datapoint[i]), y.getPixelForValue(i) - 25, 40, 50)
         }
     }
 }
@@ -41,12 +41,26 @@ var config = {
     type: "bar",
     data: {
         labels: ["Stephen Curry", "Ray Allen", "James Harden", "Reggie Miller", "Kyle Korver", "Vince Carter", "Jason Terry", "Jamal Crawford", "Damian Lillard", "Paul Pierce"],
-        datasets: [{ label: "Career's Total 3 Points Made", data: [3117, 2973, 2593, 2560, 2450, 2290, 2282, 2221, 2143, 2143] }]
+        datasets: [{ label: "Career's Total 3 Points Made", 
+            data: [3117, 2973, 2593, 2560, 2450, 2290, 2282, 2221, 2143, 2143], 
+            backgroundColor: ['rgb(29, 66, 138)',
+                                'rgb(0, 122, 51)',
+                                'rgb(206,17,65)',
+                                'rgb(253, 187, 48)',
+                                'rgb(134, 0, 56)',
+                                'rgb(117, 59, 189)',
+                                'rgb(0, 83, 188)',
+                                'rgb(245, 132, 38)',
+                                'rgb(224, 58, 62)',
+                                'rgb(0, 122, 51)'
+        ] }]
+        
     },
     borderWidth: 1,
     options: {
         responsive: false,
-        maintainAspectRatio: false
+        maintainAspectRatio: false, 
+        indexAxis: 'y'
     },
     plugins: [barAvatar]
 }

@@ -18,27 +18,48 @@
 
     <div class = "modal" id ="modal">
         <div class="modal-header">
-            <div class="title"></div>
+            <h2><div class="title"></div></h2>
             <button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
-            <div class="location"></div>
+            <div>
+                <div class="location"></div>
+            </div>
             <div class="intro"></div>
             <div class="topplayers"></div>
             <div class="numchampionships"></div>
         </div>
     </div>
 
-    <div class="totalChampionship">
-        <canvas id="totalChampionship" width="1400" height="700"></canvas>
-    </div>
 
-    <div class = "totalPoint">
-        <canvas id="totalPoint" width="1000" height="700"></canvas>
-    </div>
+    <div class = "mytabs">
 
-    <div class = "total3Point">
-        <canvas id="total3Point" width="1000" height="700"></canvas>
+        <input type="radio" id="tabTP" name="mytabs" checked="checked">
+        <label for="tabTP">Career's Total Points</label>
+        <div class="tab">
+            <h2>Top 10 Career's Total Points</h2>
+            <div class="totalPoint">
+                <canvas id="totalPoint" width="1200" height="700"></canvas>
+            </div>
+        </div>
+
+        <input type="radio" id="tabT3P" name="mytabs" checked="checked">
+        <label for="tabT3P">Career's Total 3-Point Made</label>
+        <div class="tab">
+            <h2>Top 10 Career's Total 3-Point Made</h2>
+            <div class="total3Point">
+                <canvas id="total3Point" width="1200" height="700"></canvas>
+            </div>
+        </div>
+
+        <input type="radio" id="tabTC" name="mytabs" checked="checked">
+        <label for="tabTC">Total Championships</label>
+        <div class="tab">
+            <h2>Total Championships</h2>
+            <div class="totalChampionship">
+                <canvas id="totalChampionship" width="1200" height="700"></canvas>
+            </div>
+        </div>
     </div>
 
 </body>
