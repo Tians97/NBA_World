@@ -1,0 +1,122 @@
+[
+  {
+    "Team": "Los Angeles Lakers",
+    "Times": 17
+  },
+  {
+    "Team": "Boston Celtics",
+    "Times": 17
+  },
+  {
+    "Team": "Golden State Warriors",
+    "Times": 7
+  },
+  {
+    "Team": "Chicago Bulls",
+    "Times": 6
+  },
+  {
+    "Team": "San Antonio Spurs",
+    "Times": 5
+  },
+  {
+    "Team": "Philadelphia 76ers",
+    "Times": 3
+  },
+  {
+    "Team": "Detroit Pistons",
+    "Times": 3
+  },
+  {
+    "Team": "Miami Heat",
+    "Times": 3
+  },
+  {
+    "Team": "New York Knicks",
+    "Times": 2
+  },
+  {
+    "Team": "Houston Rockets",
+    "Times": 2
+  },
+  {
+    "Team": "Milwaukee Bucks",
+    "Times": 2
+  },
+  {
+    "Team": "Cleveland Cavaliers",
+    "Times": 1
+  },
+  {
+    "Team": "Atlanta Hawks",
+    "Times": 1
+  },
+  {
+    "Team": "Oklahoma City Thunder",
+    "Times": 1
+  },
+  {
+    "Team": "Washington Wizards",
+    "Times": 1
+  },
+  {
+    "Team": "Portland Trail Blazers",
+    "Times": 1
+  },
+  {
+    "Team": "Dallas Mavericks",
+    "Times": 1
+  },
+  {
+    "Team": "Toronto Raptors",
+    "Times": 1
+  },
+  {
+    "Team": "Sacramento Kings",
+    "Times": 1
+  },
+  {
+    "Team": "Phoenix Suns",
+    "Times": 0
+  },
+  {
+    "Team": "Utah Jazz",
+    "Times": 0
+  },
+  {
+    "Team": "Orlando Magic",
+    "Times": 0
+  },
+  {
+    "Team": "Brooklyn Nets",
+    "Times": 0
+  },
+  {
+    "Team": "Indiana Pacers",
+    "Times": 0
+  },
+  {
+    "Team": "Denver Nuggets",
+    "Times": 0
+  },
+  {
+    "Team": "Los Angeles Clippers",
+    "Times": 0
+  },
+  {
+    "Team": "Memphis Grizzlies",
+    "Times": 0
+  },
+  {
+    "Team": "Minnesota Timberwolves",
+    "Times": 0
+  },
+  {
+    "Team": "New Orleans Pelicans",
+    "Times": 0
+  },
+  {
+    "Team": "Charlotte Hornets",
+    "Times": 0
+  }
+]

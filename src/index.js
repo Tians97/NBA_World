@@ -1,21 +1,33 @@
 
 import {map} from './scripts/map'
+import {totalPointChart} from'./scripts/total_championships'
 
 const title = document.getElementsByClassName('title')[0]
-const body = document.getElementsByClassName('modal-body')[0]
+const location = document.getElementsByClassName('location')[0]
+const intro = document.getElementsByClassName('intro')[0]
+const topplayers = document.getElementsByClassName('topplayers')[0]
+const numchampionships = document.getElementsByClassName('numchampionships')[0]
+
+
+
 
 document.addEventListener('DOMContentLoaded', function(){
     let backMap = d3.select("#nba-map")
 
     backMap.on("click", (e)=>{
-        console.log(e.target.id)
-        console.log(e.target.class)
         if(e.target.nodeName === "image"){
             modal.style.display = "block"
-            title.innerHTML = e.target.id
-            body.innerHTML = e.target
+            title.innerHTML = e.path[0].dataset.name
+            location.innerHTML = "Location: " + e.path[0].dataset.location
+            intro.innerHTML = "Introduction: " + e.path[0].dataset.intro
+            topplayers.innerHTML = "Top Players: " + e.path[0].dataset.topplayers
+            numchampionships.innerHTML = "Number of Championships: " + e.path[0].dataset.numchamp
+
+
+            
         }
     })
+
 
     const closeModalButtons = document.querySelectorAll('.close-button')
 
@@ -27,4 +39,5 @@ document.addEventListener('DOMContentLoaded', function(){
     })
     
     map();
+    totalPointChart();
 })
