@@ -2,29 +2,40 @@
 
 ## Background ##
 
-  NBA data visualization is a one page website made by HTML, CSS and JavaScript. In this website, people can find most of the NBA data, such as information about each basketball team, each player, and various league records and record holders. And this website also provide data visulization, help users understand the data better visually.
+  NBA World is a one page website made by HTML, CSS and JavaScript. The goal of website is helping vistor to have a basic understanding of NBA in a short time. In the website, there are two section. The first section is NBA map. In the map, vistor can have interactions with team logo, once they click the team lgoo, it will show the basic informaiton of the team. In the second section, Stats Chart, vistor can find out many stats chart made by historical data. Currently, there are 3 charts, total championships for each team, top 10 career's total points, and top 10 career's 3-points made. We will update more in the future. 
   
 ## Functionality & MVPs ##
 
-  In NBA Data Visualization , users will be able to:
-  
-  - Users can click on the map to see more information of the team (name, top players, honors)
-  - Finding out the NBA data in different seasons (depending on the api, how many seasons data do we have)
-  - Click on the player, can se the player's informaiton (team, No., honor, avg point, shoot percentage, hot spot(with plot))
-  - Visualize multiple NBA records
-
+  ### In NBA Data Visualization , users will be able to: ###
+  - Map:
+    - Using map API information to draw the US map and also draw out the Eastern and Western Conference of the NBA.
+    - Putting the team logo on the map, and the logo will shake when mouse is hover on it.
+    - The team logo is clickable.
+    - After clicking the team logo, there is a modal will popup to show the informaiton fo the team(location, introduction, top players, number of championships)
+  - Stats Charts:
+    - Putting all the charts into one block, and using tabs to switch chart.
+    - The Chart will have target image on the top of each bar, which will help vistor to understand data better.
+    - Showing the numerical data when mouse is hover on the bar.
 
 ## Technologies, Libraries, APIs ##
 
-  - Technologies: HTML, CSS and JavaScript
-  - Libraries: D3.js
-  - APIs: http://www.balldontlie.io/#introduction
+  - Technologies:
+    - HTML
+    - CSS
+    - JavaScript
+  - Libraries:
+    - D3.js
+    -Chart.js
+  - APIs: 
+    - Player Stats: http://www.balldontlie.io/#introduction
+    - Team Color: https://github.com/homerchen19/nba-color
+    - US Map: https://github.com/topojson/us-atlas
 
 
 ## Implementation Timeline ##
 
-  - Friday Afternoon & Weekend: Working on the API and get familer with D3 library 
-  - Monday: Building up the basic layout of website (HTML and CSS) and Working on the NBA map (the map will contains the team logos)
-  - Tuesday: Putting information into each block (Javascript and D3.js)
-  - Wednesday: Keep working on the data visualization, making UI better
-  - Thursday Morning: 
+  - Friday Afternoon & Weekend: Using US map API to draw the map, and using different color for diffferent conferences.
+  - Monday: Placing the team logo on the map, and making hover for each team logo.
+  - Tuesday: Create the popup modal for each team logo.
+  - Wednesday: Doing the data bar charts, and using tabs to organize them.
+  - Thursday Morning: Using CSS to format the website and modal
