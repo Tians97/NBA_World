@@ -28,7 +28,7 @@ export function map(){
             mapTeam()
     }
 
-    d3.json(mapinfor).then(
+    d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/states-albers-10m.json").then(
         (data,error)=>{
             if(error){
                 console.log(error)
