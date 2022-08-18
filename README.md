@@ -25,7 +25,7 @@
     - JavaScript
   - Libraries:
     - D3.js
-    -Chart.js
+    - Chart.js
   - APIs: 
     - Player Stats: http://www.balldontlie.io/#introduction
     - Team Color: https://github.com/homerchen19/nba-color
