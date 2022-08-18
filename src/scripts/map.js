@@ -32,7 +32,6 @@ export function map(){
                 console.log(error)
             } else {
                 stateData = topojson.feature(data, data.objects.states).features
-                console.log(stateData)
                 drawMap()
             }
         }
@@ -49,7 +48,6 @@ export function legend(){
 
 export function mapTeam(){
     
-    console.log('team logo')
     let svg = d3.select('#nba-map')
     const team = svg.append("g")
         .attr("class", "team")
