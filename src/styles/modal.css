@@ -7,7 +7,7 @@
     border: 1px solid black;
     border-radius: 10px;
     z-index: 10px;
-    background-color: aliceblue;
+    background-color: white;
     width: 500px;
     max-width: 80%;
     display: none;
@@ -39,6 +39,29 @@
     padding:10px 15px;
 }
 
+#location{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 150px
+}
+
+#intro{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 120px
+}
+
+#topplayers {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 120px
+}
+
+#numchampionships {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 240px
+}
 
 
 

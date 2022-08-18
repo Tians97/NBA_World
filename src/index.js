@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function(){
         if(e.target.nodeName === "image"){
             modal.style.display = "block"
             title.innerHTML = e.path[0].dataset.name
-            location.innerHTML = "Location: " + e.path[0].dataset.location
-            intro.innerHTML = "Introduction: " + e.path[0].dataset.intro
-            topplayers.innerHTML = "Top Players: " + e.path[0].dataset.topplayers
-            numchampionships.innerHTML = "Number of Championships: " + e.path[0].dataset.numchamp
+            location.innerHTML = e.path[0].dataset.location
+            intro.innerHTML = e.path[0].dataset.intro
+            topplayers.innerHTML = e.path[0].dataset.topplayers
+            numchampionships.innerHTML = e.path[0].dataset.numchamp
 
 
             

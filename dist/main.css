@@ -35,7 +35,7 @@ image:hover {
     border: 1px solid black;
     border-radius: 10px;
     z-index: 10px;
-    background-color: aliceblue;
+    background-color: white;
     width: 500px;
     max-width: 80%;
     display: none;
@@ -67,6 +67,29 @@ image:hover {
     padding:10px 15px;
 }
 
+#location{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 150px
+}
+
+#intro{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 120px
+}
+
+#topplayers {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 120px
+}
+
+#numchampionships {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 240px
+}
 
 
 
@@ -102,7 +125,7 @@ canvas#totalChampionship{
     justify-content: center;
 }
 
-h2{
+h3{
     display: flex;
     justify-content: center;
 }
@@ -126,8 +149,8 @@ h2{
     display: none;
 }
 
-.mytabs .tab h2{
-    font-size: 3em;
+.mytabs .tab h3{
+    font-size: 1cm;
 }
 
 .mytabs input[type="radio"]:checked + label + .tab{
@@ -152,6 +175,7 @@ ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-right: 50px;
 }
 
 li{
@@ -160,6 +184,10 @@ li{
 
 .icon:hover{
     transform: scale(1.3);
+}
+
+.logo{
+    margin-left: 50px;
 }
 
 

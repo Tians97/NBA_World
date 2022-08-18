@@ -15,14 +15,13 @@
 <body>
     <div class="'header">
         <nav id="header">
-            <img src ='./image/Logo2.png' width="100" height="100" class="logo">
+            <img src ='./image/Logo2.png' width="150" height="150" class="logo">
             <ul>
                 <li><a href="https://www.linkedin.com/in/tianshuxiao/"><img src="./image/linkedin.png" width="30" height="30" class="icon"></a></li>
                 <li><a href="https://github.com/Tians97/NBA_World"><img src="./image/github.png" width="30" height="30" class="icon"></a></li>
             </ul>
         </nav>
     </div>
-    <h1>NBA Map</h1>
     <svg id="nba-map" width="975" height="610"></svg>
 
     <div class = "modal" id ="modal">
@@ -32,12 +31,24 @@
         </div>
         <div class="modal-body">
             <div>
-                <img src="./image/Location.png" alt="">
+                <p id="location"><img src="./image/location.png" width="15" height="20"> Arena & Location</p>
                 <div class="location"></div>
             </div>
-            <div class="intro"></div>
-            <div class="topplayers"></div>
-            <div class="numchampionships"></div>
+            <div>
+                <p id="intro"><img src="./image/intro.png" width="15" height="15"> Introduction</p>
+                <div class="intro"></div>
+            </div>
+
+            <div>
+                <p id="topplayers"><img src="./image/player.png" width="20" height="20"> Top Players</p>
+                <div class="topplayers"></div>
+            </div>
+            
+            <div>
+                <p id="numchampionships"><img src="./image/trophy.png" width="30" height="30"> Number of Championships</p>
+                <div class="numchampionships"></div>
+            </div>
+            
         </div>
     </div>
 
@@ -47,7 +58,7 @@
         <input type="radio" id="tabTP" name="mytabs" checked="checked">
         <label for="tabTP">Career's Total Points</label>
         <div class="tab">
-            <h2>Top 10 Career's Total Points</h2>
+            <h3>Top 10 Career's Total Points</h3>
             <div class="totalPoint">
                 <canvas id="totalPoint" width="1200" height="700"></canvas>
             </div>
@@ -56,7 +67,7 @@
         <input type="radio" id="tabT3P" name="mytabs" checked="checked">
         <label for="tabT3P">Career's Total 3-Point Made</label>
         <div class="tab">
-            <h2>Top 10 Career's Total 3-Point Made</h2>
+            <h3>Top 10 Career's Total 3-Point Made</h3>
             <div class="total3Point">
                 <canvas id="total3Point" width="1200" height="700"></canvas>
             </div>
@@ -65,7 +76,7 @@
         <input type="radio" id="tabTC" name="mytabs" checked="checked">
         <label for="tabTC">Total Championships</label>
         <div class="tab">
-            <h2>Total Championships</h2>
+            <h3>Total Championships</h3>
             <div class="totalChampionship">
                 <canvas id="totalChampionship" width="1200" height="700"></canvas>
             </div>

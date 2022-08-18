@@ -53,7 +53,7 @@ const barAvatar = {
             scales: { x, y } } = chart;
         ctx.save();
         for (let i = 0; i < datapoint.length; i++) {
-            ctx.drawImage(image[i], x.getPixelForValue(datapoint[i]) - 25, y.getPixelForValue(i) - 25, 50, 50)
+            ctx.drawImage(image[i], x.getPixelForValue(datapoint[i]), y.getPixelForValue(i) - 25, 50, 50)
         }
     }
 }
