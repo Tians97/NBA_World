@@ -20,7 +20,7 @@
 }
 
 .intro-modal-header .intro-title{
-    font-size: 1.25rem;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -35,5 +35,5 @@
 
 .intro-modal-body{
     padding: 10px 15px;
-    font-size: 30px
+    font-size: 25px
 }
