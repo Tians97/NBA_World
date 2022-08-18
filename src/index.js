@@ -41,6 +41,16 @@ document.addEventListener('DOMContentLoaded', function(){
             modal.style.display = "none"
         })
     })
+
+    const introCloseModalButtons = document.querySelectorAll('.intro-close-button')
+
+    introCloseModalButtons.forEach(button => {
+        button,this.addEventListener('click', ()=>{
+            const modal = button.closest('.intro-modal')
+            modal.style.display = "none"
+        })
+    })
+
     
     totalPointChart();
     total3PointChart();

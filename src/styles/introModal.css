@@ -1,0 +1,39 @@
+.intro-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 20px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    border: 4px solid black
+}
+
+.intro-modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.intro-modal-header .intro-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.intro-modal-header .intro-close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.intro-modal-body{
+    padding: 10px 15px;
+    font-size: 30px
+}
