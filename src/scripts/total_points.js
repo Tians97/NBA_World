@@ -59,7 +59,12 @@ var config = {
     options: {
         responsive:false,
         maintainAspectRatio: false,
-        indexAxis: "y"
+        indexAxis: "y",
+        plugins: {
+            legend: {
+                display: false
+            }
+        }
     },
     plugins: [barAvatar]
 }

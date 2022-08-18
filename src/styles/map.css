@@ -16,3 +16,7 @@ svg {
 img{
     z-index: 1;
 }
+
+image:hover {
+    transform: scale(1.01);
+}

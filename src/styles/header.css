@@ -1,0 +1,22 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+    padding: 10px
+}
+
+.icon:hover{
+    transform: scale(1.3);
+}
+
+
