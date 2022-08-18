@@ -20,6 +20,11 @@ img{
 image:hover {
     transform: scale(1.01);
 }
+
+.map_title{
+    display: flex;
+    justify-content: center;
+}
 .modal{
     position:fixed;
     top: 50%;
