@@ -1,7 +1,9 @@
+import * as d3 from 'd3'
+
 export function map(){
     var svg = d3.select("#nba-map");
     var path = d3.geoPath();
-    const mapinfor = "../../data/states-albers-10m.json"
+    const mapinfor = "../data/states-albers-10m.json"
     let western = ["Washington","Oregon","California","Nevada","Idaho","Arizona","Utah","New Mexico","Colorado","Montana","Wyoming","Colorado","Texas","Oklahoma","Kansas","Nebraska","South Dakota","North Dakota","Minnesota","Iowa","Missouri","Arkansas","Tennessee","Louisiana","Hawaii","Alaska"]
     svg = d3.select('#nba-map')
     let stateData
