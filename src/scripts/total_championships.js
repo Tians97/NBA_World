@@ -52,6 +52,7 @@ const barAvatar = {
         const { ctx, chartArea: { top, bottom, left, right, width, height },
             scales: { x, y } } = chart;
         ctx.save();
+        console.log(ctx,"context")
         for (let i = 0; i < datapoint.length; i++) {
             ctx.drawImage(image[i], x.getPixelForValue(datapoint[i]), y.getPixelForValue(i) - 25, 50, 50)
         }
