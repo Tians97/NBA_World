@@ -17,6 +17,7 @@ const numchampionships = document.getElementsByClassName('numchampionships')[0]
 document.addEventListener('DOMContentLoaded', function(){
     let backMap = d3.select("#nba-map")
 
+    map();
     backMap.on("click", (e)=>{
         if(e.target.nodeName === "image"){
             modal.style.display = "block"
@@ -41,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
     
-    map();
     totalPointChart();
     total3PointChart();
     totalChampionships();
