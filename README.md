@@ -12,10 +12,14 @@
     - Putting the team logo on the map, and the logo will shake when mouse is hover on it.
     - The team logo is clickable.
     - After clicking the team logo, there is a modal will popup to show the informaiton fo the team(location, introduction, top players, number of championships)
+    
+    ![map](https://github.com/Tians97/NBA_World/blob/d14d82adb5ad86aaea50d583701515485c1908f8/gif/map.gif)
   - Stats Charts:
     - Putting all the charts into one block, and using tabs to switch chart.
     - The Chart will have target image on the top of each bar, which will help vistor to understand data better.
     - Showing the numerical data when mouse is hover on the bar.
+    
+    ![chart](https://github.com/Tians97/NBA_World/blob/d14d82adb5ad86aaea50d583701515485c1908f8/gif/chart.gif)
 
 ## Technologies, Libraries, APIs ##
 
