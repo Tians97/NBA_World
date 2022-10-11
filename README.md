@@ -26,7 +26,38 @@
     - Putting the team logo on the map, and the logo will shake when mouse is hover on it.
     - The team logo is clickable.
     - After clicking the team logo, there is a modal will popup to show the informaiton fo the team(location, introduction, top players, number of championships)
-    
+    ```javascript
+    export function map(){
+    var svg = d3.select("#nba-map");
+    var path = d3.geoPath();
+    const mapinfor = "../data/states-albers-10m.json"
+    let western = ["Washington","Oregon","California","Nevada","Idaho","Arizona","Utah","New Mexico",
+    "Colorado","Montana","Wyoming","Colorado","Texas","Oklahoma","Kansas",
+    "Nebraska","South Dakota","North Dakota","Minnesota","Iowa","Missouri",
+    "Arkansas","Tennessee","Louisiana","Hawaii","Alaska"]
+    svg = d3.select('#nba-map')
+    let stateData
+    function drawMap(){
+        svg.append('g')
+            .attr('class', 'state')
+            .selectAll('path')
+            .data(stateData)
+            .enter()
+            .append('path')
+            .attr('d', d3.geoPath())
+            .attr('class', 'state')
+            .attr("fill", (el)=>{
+                let stateName = el.properties.name
+                if (western.includes(stateName)){
+                    return "lightblue"
+                } else {
+                    return "pink"
+                }
+            })
+            legend()
+            mapTeam()
+    }
+    ```
     ![map](https://github.com/Tians97/NBA_World/blob/d14d82adb5ad86aaea50d583701515485c1908f8/gif/map.gif)
   - Stats Charts:
     - Putting all the charts into one block, and using tabs to switch chart.
